@@ -14,8 +14,8 @@ import TimelineLogPanel from "./components/TimelineLogPanel";
 import MultiAgentBrain from "./components/MultiAgentBrain";
 import ExplanationGraph from "./components/ExplanationGraph";
 
-const API_BASE = "http://localhost:8000/api";
-const WS_BASE = "ws://localhost:8000/api/ws";
+const API_BASE = "https://9739acc9-4124-429c-b6dd-a2a80e320e6c-00-104s00nlz66h8.sisko.replit.dev/api";
+const WS_BASE = "wss://9739acc9-4124-429c-b6dd-a2a80e320e6c-00-104s00nlz66h8.sisko.replit.dev/api/ws";
 
 const TACTICAL_NAMES: Record<string, string> = {
   "Kitchen":       "Hangar Deck",
