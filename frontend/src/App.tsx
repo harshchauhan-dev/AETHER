@@ -881,7 +881,7 @@ Status: A* dynamic routes mapped and broadcasted to response drones.`
       }}>
         {/* Branding header */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", paddingLeft: "0.25rem" }}>
-          <img src="/logo.png" alt="AETHER OS Logo" style={{ height: "30px", width: "30px", borderRadius: "6px", border: "1px solid var(--border-subtle)" }} />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="AETHER OS Logo" style={{ height: "30px", width: "30px", borderRadius: "6px", border: "1px solid var(--border-subtle)" }} />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span style={{ fontWeight: "bold", fontSize: "1.05rem", color: "#fff", letterSpacing: "-0.015em" }}>AETHER OS</span>
             <span style={{ fontSize: "0.52rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Space AI Engine</span>
