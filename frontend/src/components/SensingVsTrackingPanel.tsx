@@ -100,7 +100,7 @@ export default function SensingVsTrackingPanel({ rooms, occupants }: SensingVsTr
         if (occ.sigma_points && occ.sigma_points.length > 0) {
           ctx.fillStyle = `rgba(${dotColor}, ${alpha * 0.45})`;
           let maxDist = 0;
-          occ.sigma_points.forEach(sp => {
+          occ.sigma_points.forEach((sp: any[]) => {
             const spNormX = (sp[0] / maxRange) * 2 - 1;
             const spNormY = (sp[1] / maxRange) * 2 - 1;
             const spX = centerX + spNormX * radius * 0.8;

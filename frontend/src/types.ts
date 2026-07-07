@@ -9,6 +9,7 @@ export interface OccupantState {
   pos_x: number;
   pos_y: number;
   pos_z: number;
+  sigma_points?: any[];
 }
 
 export interface RoomState {

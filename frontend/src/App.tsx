@@ -73,8 +73,6 @@ export default function App() {
   const [schedulerDelay, setSchedulerDelay] = useState<number>(5);
   
   // Entity Spawner Form Inputs
-  const [spawnId, setSpawnId] = useState("");
-  const [spawnRole, setSpawnRole] = useState("visitor");
   const [missionProgress, setMissionProgress] = useState<{
     missionNum: string;
     scenario: string;

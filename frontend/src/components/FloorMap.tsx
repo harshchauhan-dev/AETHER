@@ -261,7 +261,6 @@ export default function FloorMap({
           ctx.fillStyle = `rgba(${Math.floor(220 * (1 - g))}, ${Math.floor(200 * g)}, 60, ${0.06 + (1 - g) * 0.12})`;
         } else {
           if (isHaz || room.temperature > 30.0) {
-            const heat = Math.min(1, (room.temperature - 21.5) / 120);
             const c = roomCenter(room.room_id);
             const maxDim = Math.max(rr.w, rr.h);
             const gs = ctx.createRadialGradient(c.cx, c.cy, 5, c.cx, c.cy, maxDim * 0.95);
@@ -534,7 +533,7 @@ export default function FloorMap({
           ctx.save();
           ctx.fillStyle = color;
           let maxDist = 0;
-          occ.sigma_points.forEach(sp => {
+          occ.sigma_points.forEach((sp: any[]) => {
             const spX = rr.x + (sp[0] / 5.0) * (rr.w - 20) + 10;
             const spY = rr.y + (sp[1] / 5.0) * (rr.h - 20) + 10;
 
